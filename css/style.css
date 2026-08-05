@@ -1951,3 +1951,75 @@ body {
     padding: 32px 24px !important;
   }
 }
+
+/* =========================================
+   SCREENSHOT FRAMING FIX
+   Community Fridge + Hidden Figures only
+========================================= */
+
+.screenshot-frame {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 430px !important;
+
+  margin: 0 !important;
+  padding: 28px !important;
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+
+  background: #1b2a42 !important;
+  border-right: 1px solid rgba(168, 216, 255, 0.2) !important;
+}
+
+.screenshot-frame .project-screenshot {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 760px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 470px !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  border: 1px solid rgba(168, 216, 255, 0.3) !important;
+  border-radius: 18px !important;
+
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28) !important;
+}
+
+/* Stop older project-image rules from cropping screenshots */
+
+.development-card .screenshot-frame img {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+}
+
+/* Tablet and phone */
+
+@media (max-width: 900px) {
+  .screenshot-frame {
+    min-height: 0 !important;
+    padding: 18px !important;
+
+    border-right: none !important;
+    border-bottom: 1px solid rgba(168, 216, 255, 0.2) !important;
+  }
+
+  .screenshot-frame .project-screenshot {
+    max-width: 100% !important;
+    max-height: none !important;
+  }
+}

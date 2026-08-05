@@ -1830,3 +1830,124 @@ body {
     min-width: 220px !important;
   }
 }
+/* =========================================
+   FIX PROJECT IMAGE FRAMING
+========================================= */
+
+.development-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  min-width: 0 !important;
+
+  background: #142036 !important;
+  border: 1px solid rgba(168, 216, 255, 0.28) !important;
+  border-radius: 24px !important;
+}
+
+.development-content {
+  min-width: 0 !important;
+  padding: 45px !important;
+}
+
+/* Community Fridge and FPV drone images */
+
+.development-card > img {
+  display: block !important;
+
+  width: calc(100% - 48px) !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 520px !important;
+
+  margin: 24px auto !important;
+  padding: 0 !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: #1b2a42 !important;
+  border: 1px solid rgba(168, 216, 255, 0.25) !important;
+  border-radius: 18px !important;
+}
+
+/* Hidden Figures image container */
+
+.presentation-project .project-image-frame {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 460px !important;
+  padding: 28px !important;
+
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+
+  background: #1b2a42 !important;
+}
+
+/* Hidden Figures actual image */
+
+.presentation-project .presentation-image {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 720px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 440px !important;
+
+  margin: auto !important;
+  padding: 0 !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  border: 1px solid rgba(168, 216, 255, 0.3) !important;
+  border-radius: 18px !important;
+}
+
+/* Prevent long project headings from leaving the card */
+
+.development-content h3 {
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  font-size: clamp(2rem, 3.5vw, 3.4rem) !important;
+}
+
+/* Stack cleanly on tablets and phones */
+
+@media (max-width: 900px) {
+  .development-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .development-card:nth-child(even) > img {
+    order: initial !important;
+  }
+
+  .development-card > img {
+    width: calc(100% - 36px) !important;
+    max-height: none !important;
+    margin: 18px auto !important;
+  }
+
+  .presentation-project .project-image-frame {
+    min-height: 0 !important;
+    padding: 18px !important;
+  }
+
+  .presentation-project .presentation-image {
+    max-height: none !important;
+  }
+
+  .development-content {
+    padding: 32px 24px !important;
+  }
+}

@@ -2023,3 +2023,20 @@ body {
     max-height: none !important;
   }
 }
+
+/* FOOTER CREDIT */
+
+footer {
+  position: relative;
+}
+
+.chatgpt-credit {
+  position: absolute;
+  left: 20px;
+  bottom: 8px;
+
+  color: rgba(203, 216, 238, 0.5);
+  font-size: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}

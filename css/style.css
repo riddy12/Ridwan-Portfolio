@@ -2063,3 +2063,64 @@ footer > p {
   text-align: right !important;
   white-space: nowrap !important;
 }
+/* =========================================
+   MAKE LARGE TEXT MORE SIMPLE / STUDENT-LIKE
+========================================= */
+
+/* Main hero title */
+.hero h1 {
+  font-size: clamp(3.8rem, 8vw, 7rem) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.045em !important;
+}
+
+/* RIDWAN name */
+.hero h1 span {
+  font-size: 0.9em !important;
+  text-shadow: 5px 5px 0 rgba(137, 188, 193, 0.28) !important;
+}
+
+/* Welcome text */
+.eyebrow {
+  font-size: 0.8rem !important;
+  letter-spacing: 0.16em !important;
+}
+
+/* Main hero paragraph */
+.hero-text {
+  max-width: 760px !important;
+  font-size: clamp(1.15rem, 2vw, 1.7rem) !important;
+  line-height: 1.45 !important;
+}
+
+/* All main section headings */
+.section h2,
+.development-section h2,
+.future-section h2,
+.skills h2,
+.learning-section h2,
+.progress-section h2 {
+  font-size: clamp(2.1rem, 4vw, 3.6rem) !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.05 !important;
+}
+
+/* Project titles */
+.development-content h3,
+.portfolio-highlight h3 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem) !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* Smaller card titles */
+.card h3,
+.progress-card h3 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
+}
+
+/* Slightly less dramatic labels */
+.section-label,
+.project-type {
+  letter-spacing: 0.08em !important;
+  font-weight: 600 !important;
+}

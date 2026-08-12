@@ -2124,3 +2124,82 @@ footer > p {
   letter-spacing: 0.08em !important;
   font-weight: 600 !important;
 }
+/* =========================================
+   SIMPLE ONE-COLOR THEME
+========================================= */
+
+/* Main accent color everywhere */
+:root {
+  --simple-accent: #7fb3d5;
+}
+
+/* Big name / portfolio text */
+.hero h1 span {
+  color: var(--simple-accent) !important;
+  text-shadow: none !important;
+}
+
+/* Welcome text */
+.eyebrow {
+  color: var(--simple-accent) !important;
+}
+
+/* Buttons */
+.button {
+  background: var(--simple-accent) !important;
+  border-color: var(--simple-accent) !important;
+  color: #0f1724 !important;
+
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Section labels */
+.section-label,
+.project-type {
+  color: var(--simple-accent) !important;
+}
+
+/* Links and small accent text */
+a {
+  text-shadow: none !important;
+}
+
+/* Progress bars */
+.progress-fill {
+  background: var(--simple-accent) !important;
+  background-image: none !important;
+}
+
+/* Skill boxes */
+.skill-list li {
+  border-color: var(--simple-accent) !important;
+}
+
+/* Cards / borders */
+.development-card,
+.progress-card,
+.card,
+.portfolio-highlight {
+  box-shadow: none !important;
+}
+
+/* Remove gradient backgrounds */
+.hero,
+.site-header,
+body,
+.section,
+.future-section,
+.learning-section,
+.progress-section,
+.development-section {
+  background-image: none !important;
+}
+
+/* Remove colored shadow from large text */
+.hero h1,
+.hero h1 span,
+.section h2,
+.development-content h3 {
+  text-shadow: none !important;
+}

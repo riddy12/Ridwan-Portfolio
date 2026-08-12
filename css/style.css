@@ -2203,3 +2203,94 @@ body,
 .development-content h3 {
   text-shadow: none !important;
 }
+/* =========================================
+   FINAL SIMPLE COLOR OVERRIDE
+========================================= */
+
+:root {
+  --simple-accent: #7fb3d5;
+}
+
+/* All accent text = same blue */
+.eyebrow,
+.section-label,
+.project-type,
+.hero h1 span,
+.logo,
+.navigation-links a:hover,
+.button,
+.progress-heading span:first-child {
+  color: var(--simple-accent) !important;
+}
+
+/* Remove ALL text shadows */
+.hero h1,
+.hero h1 span,
+.hero-text,
+.section h2,
+.development-content h3,
+.portfolio-highlight h3,
+.logo,
+.navigation-links a {
+  text-shadow: none !important;
+}
+
+/* Main hero blue text */
+.hero h1 span {
+  color: var(--simple-accent) !important;
+}
+
+/* Button = same blue, no green */
+.button {
+  background: var(--simple-accent) !important;
+  background-image: none !important;
+
+  border: 1px solid var(--simple-accent) !important;
+
+  color: #0f1724 !important;
+
+  box-shadow: none !important;
+}
+
+/* Remove button pseudo-element shadow if one exists */
+.button::before,
+.button::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Progress bars */
+.progress-fill {
+  background: var(--simple-accent) !important;
+  background-image: none !important;
+}
+
+/* Skill boxes */
+.skill-list li {
+  border-color: var(--simple-accent) !important;
+  box-shadow: none !important;
+}
+
+/* Remove fancy card shadows */
+.card,
+.progress-card,
+.development-card,
+.portfolio-highlight,
+.future-list > div {
+  box-shadow: none !important;
+}
+
+/* Remove gradients everywhere */
+body,
+.site-header,
+.hero,
+.section,
+.about,
+.learning-section,
+.progress-section,
+.development-section,
+.future-section,
+.skills,
+footer {
+  background-image: none !important;
+}

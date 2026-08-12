@@ -2125,164 +2125,110 @@ footer > p {
   font-weight: 600 !important;
 }
 /* =========================================
-   SIMPLE ONE-COLOR THEME
-========================================= */
-
-/* Main accent color everywhere */
-:root {
-  --simple-accent: #7fb3d5;
-}
-
-/* Big name / portfolio text */
-.hero h1 span {
-  color: var(--simple-accent) !important;
-  text-shadow: none !important;
-}
-
-/* Welcome text */
-.eyebrow {
-  color: var(--simple-accent) !important;
-}
-
-/* Buttons */
-.button {
-  background: var(--simple-accent) !important;
-  border-color: var(--simple-accent) !important;
-  color: #0f1724 !important;
-
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-/* Section labels */
-.section-label,
-.project-type {
-  color: var(--simple-accent) !important;
-}
-
-/* Links and small accent text */
-a {
-  text-shadow: none !important;
-}
-
-/* Progress bars */
-.progress-fill {
-  background: var(--simple-accent) !important;
-  background-image: none !important;
-}
-
-/* Skill boxes */
-.skill-list li {
-  border-color: var(--simple-accent) !important;
-}
-
-/* Cards / borders */
-.development-card,
-.progress-card,
-.card,
-.portfolio-highlight {
-  box-shadow: none !important;
-}
-
-/* Remove gradient backgrounds */
-.hero,
-.site-header,
-body,
-.section,
-.future-section,
-.learning-section,
-.progress-section,
-.development-section {
-  background-image: none !important;
-}
-
-/* Remove colored shadow from large text */
-.hero h1,
-.hero h1 span,
-.section h2,
-.development-content h3 {
-  text-shadow: none !important;
-}
-/* =========================================
-   FINAL SIMPLE COLOR OVERRIDE
+   FINAL SIMPLE STUDENT THEME
 ========================================= */
 
 :root {
-  --simple-accent: #7fb3d5;
+  --simple-accent: #86a9c4;
 }
 
-/* All accent text = same blue */
+/* Remove all gradients */
+* {
+  background-image: none !important;
+}
+
+/* One accent color everywhere */
+.logo,
 .eyebrow,
 .section-label,
 .project-type,
 .hero h1 span,
-.logo,
 .navigation-links a:hover,
-.button,
 .progress-heading span:first-child {
   color: var(--simple-accent) !important;
 }
 
-/* Remove ALL text shadows */
+/* Remove decorative shadows */
 .hero h1,
 .hero h1 span,
 .hero-text,
-.section h2,
-.development-content h3,
-.portfolio-highlight h3,
-.logo,
-.navigation-links a {
+.button,
+.card,
+.progress-card,
+.development-card,
+.portfolio-highlight,
+.future-list > div,
+.skill-list li {
   text-shadow: none !important;
+  box-shadow: none !important;
 }
 
-/* Main hero blue text */
+/* Hero second line */
 .hero h1 span {
   color: var(--simple-accent) !important;
 }
 
-/* Button = same blue, no green */
+/* Main button */
 .button {
   background: var(--simple-accent) !important;
-  background-image: none !important;
-
   border: 1px solid var(--simple-accent) !important;
-
-  color: #0f1724 !important;
+  color: #101722 !important;
 
   box-shadow: none !important;
+  text-shadow: none !important;
+
+  transform: none !important;
 }
 
-/* Remove button pseudo-element shadow if one exists */
+/* Kill any button decoration */
 .button::before,
 .button::after {
   display: none !important;
   content: none !important;
+  box-shadow: none !important;
 }
 
 /* Progress bars */
 .progress-fill {
   background: var(--simple-accent) !important;
-  background-image: none !important;
-}
-
-/* Skill boxes */
-.skill-list li {
-  border-color: var(--simple-accent) !important;
   box-shadow: none !important;
 }
 
-/* Remove fancy card shadows */
+/* Cards */
 .card,
 .progress-card,
 .development-card,
 .portfolio-highlight,
 .future-list > div {
+  border-color: rgba(134, 169, 196, 0.28) !important;
+}
+
+/* Skills */
+.skill-list li {
+  border-color: rgba(134, 169, 196, 0.5) !important;
+  background: transparent !important;
+}
+
+/* Remove hover movement */
+.card:hover,
+.progress-card:hover,
+.development-card:hover,
+.button:hover,
+.skill-list li:hover {
+  transform: none !important;
   box-shadow: none !important;
 }
 
-/* Remove gradients everywhere */
-body,
+/* Keep backgrounds simple */
+body {
+  background: #0f1724 !important;
+}
+
 .site-header,
+footer {
+  background: #111b2b !important;
+}
+
 .hero,
 .section,
 .about,
@@ -2290,7 +2236,6 @@ body,
 .progress-section,
 .development-section,
 .future-section,
-.skills,
-footer {
-  background-image: none !important;
+.skills {
+  background: #142033 !important;
 }
